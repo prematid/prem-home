@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Roboto, sans-serif;
     text-align: center;
 }
 
@@ -20,15 +20,37 @@ h1 {
     padding: 10px 20px;
     margin: 10px;
     cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #FF3CAC, #784BA0);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.choice:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .result {
     margin-top: 20px;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+    transform: translateY(-20px);
 }
 
 #message {
     font-size: 24px;
     font-weight: bold;
+    background-color: #ffcc00;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.3s;
 }
 
 #computer-choice {
